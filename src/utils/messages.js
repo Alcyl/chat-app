@@ -1,13 +1,15 @@
 const now = new Date();
-const generateMessage = (text) => {
+const generateMessage = (username, text) => {
     return {
+        username,
         text,
         createdAt: now.getTime()
     }
 }
 
-const generateLocationMessage = (url) => {
+const generateLocationMessage = (username, url) => {
     return {
+        username,
         url,
         createdAt: now.getTime()
     }
